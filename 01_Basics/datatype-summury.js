@@ -12,7 +12,7 @@ let userEmail;
 const type = Symbol('123');
 const anothertype = Symbol('123');
 
-console.log(type === anothertype);
+// console.log(type === anothertype);
 
 
 // Refrence
@@ -28,3 +28,31 @@ const obj= {
 const Myfunction = function(){
     console.log("hello World")
 }
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+// Stack (Primitive) Heap (Non - Primitive )
+
+let mychannel = "live and let live";
+let anotherchannel = mychannel;
+
+anotherchannel = "do what you want";
+
+console.log(mychannel);
+console.log(anotherchannel);
+
+
+// Non Primitive 
+
+let userone = {
+    email : "dhara@google.com",
+    name : "Dhara"
+}
+
+let usertwo = userone;
+
+usertwo.email = "dhara@mmt.com"
+
+console.log(userone);
+console.log(usertwo);
